@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap')
+
+*
+    box-sizing: border-box
+
+html, body, p
+    margin: 0
+
+body, button, input, select, textarea
+    font-family: 'Poppins', sans-serif
+
+body
+    display: flex
+    background: #f5f5fb
+
+nav
+    min-height: 100vh
+    width: 170px
+    padding: 30px 0 20px
+    background: black
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    color: white
+
+    div
+        img
+            width: 125px
+
+        .menuItems
+            list-style: none
+            display: flex
+            flex-direction: column
+            padding: 0
+            margin: 25px 0
+
+            li
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin: 15px 0
+                font-size: 14px
+
+                &:hover
+                    color: gray
+                    cursor: pointer
+
+                img
+                    width: 30px
+
+                p
+                    margin: 0
+                    padding-top: 10px
+
+    .settings
+        display: flex
+        align-items: center
+        font-size: 10px
+
+        &:hover
+            color: gray
+            cursor: pointer
+
+        svg
+            margin-right: 6px
+            width: 13px
+
+main
+    width: 100%
+    max-width: 1100px
+    margin: 35px
+    background: #F5F5FB
+
+.topSection
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+    justify-content: space-between
+
+    .container
+        display: flex
+        align-items: center
+        background: white
+        padding: 12px 20px
+        border-radius: 10px
+        box-shadow: 4px 3px 7px 0 rgb(32 33 36 / 28%)
+        line-height: 36px
+
+        .info
+            display: flex
+            flex-direction: column
+            padding-right: 20px
+
+            &:nth-child(3)
+                padding-left: 30px
+                border-left: 2px solid black
+
+            .title
+                font-weight: bold
+
+            .number
+                font-size: 40px
+                font-weight: bold
+                color: #FFB22B
+
+        .imgLua
+            margin-right: 30px
+
+.bottomSection
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 50px
+    gap: 35px
+
+    .containerTable, .containerCircle
+        background: white
+        box-shadow: 4px 3px 7px 0 rgb(32 33 36 / 28%)
+        border-radius: 10px
+        padding: 20px
+        width: 100%
+
+        h1
+            font-size: 15px
+            margin-top: 0
+            margin-bottom: 8px
+
+    .containerTable
+        flex: 2
+
+        p
+            font-size: 14px
+
+        table
+            margin-top: 15px
+            width: 100%
+            min-width: 560px
+
+            thead
+                text-align: left
+
+                th
+                    color: #3b3b3b
+                    border-bottom: 1.5px solid #525252d0
+                    font-size: 13px
+
+            tbody
+                text-align: left
+
+                td
+                    font-size: 12px
+                    color: #6b6b6b
+                    padding: 8px 40px 8px 0
+                    border-bottom: 1px solid lightgray
+
+                    &:last-child
+                        text-align: center
+
+    .containerCircle
+        display: flex
+        flex-direction: column
+        align-items: center
+        flex: 1
+
+        div
+            display: flex
+            justify-content: center
+
+footer
+    display: none
+
+@media (max-width: 1050px)
+    main
+        .topSection
+            justify-content: center
+            max-width: 500px
+            margin: 0 auto
+
+            .containerMoonsAndPlanets
+                order: 1
+
+        .bottomSection
+            margin-top: 35px
+
+@media (max-width: 800px)
+    body
+        display: block
+
+    nav
+        min-height: unset
+        width: 100%
+        padding: 12px 20px 12px 10px
+
+        div
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+
+            img
+                width: 100px
+                height: 100%
+
+            .menuItems
+                flex-direction: row
+                align-items: baseline
+                margin: 0
+
+                li
+                    margin: 0
+
+                    & + li
+                        padding-left: 25px
+
+                    img
+                        width: 32px
+
+                    p
+                        display: none
+
+        .settings
+            display: none
+
+    main
+        margin: 0
+        padding: 35px 20px
+
+        .topSection
+            justify-content: center
+
+            .container
+                padding: 15px
+                line-height: 32px
+
+                .info
+                    .title
+                        font-size: 15px
+
+                    .number
+                        font-size: 32px
+
+                img
+                    width: 55px
+
+            .containerMoonsAndPlanets
+                order: 1
+
+        .bottomSection
+            margin-top: 35px
+
+            .containerTable
+                flex: unset
+                padding: 15px
+
+                table
+                    min-width: unset
+
+                    tbody
+                        td
+                            font-size: 11px
+                            padding: 5px 20px 8px 0
+
+            .containerCircle
+                flex: unset
+                padding: 15px
+
+    footer
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        background: black
+        color: white
+        font-size: 13px
+        padding: 12px
+
+        &:hover
+            color: gray
+            cursor: pointer
+
+        svg
+            margin-right: 20px
+            margin-right: 6px
+            width: 18px
