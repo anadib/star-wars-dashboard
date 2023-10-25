@@ -2,7 +2,8 @@
  Star Wars Dashboard
 </h1>
 
-![](https://github.com/anadib/star-wars-dashboard/blob/main/gifs/dashboardStartWarsDesktop.PNG?raw=true) ![](https://github.com/anadib/star-wars-dashboard/blob/main/gifs/dashboardStartWarsMobile.gif?raw=true)
+![](https://github.com/anadib/star-wars-dashboard/blob/main/gifs/dashboardStartWarsDesktop.PNG?raw=true) 
+[See Mobile](https://github.com/anadib/star-wars-dashboard/blob/main/gifs/dashboardStartWarsMobile.gif)
 
 <p align="center">
   <a href="#page_with_curl-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
